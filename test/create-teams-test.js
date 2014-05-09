@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 
 var createTeams = require('../lib/create-teams');
 var separateIntoTeams = require('../lib/separate-into-teams');
-var data = require('../lib/fake-data');
+var data = require('./fake-data');
 
 var teams = createTeams(separateIntoTeams(data));
 

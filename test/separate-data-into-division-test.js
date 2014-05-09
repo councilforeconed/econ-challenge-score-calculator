@@ -1,7 +1,7 @@
 var assert = require('chai').assert;
 
 var separate = require('../lib/separate-into-divisions');
-var data = require('../lib/fake-data');
+var data = require('./fake-data');
 
 var result = separate(data);
 
