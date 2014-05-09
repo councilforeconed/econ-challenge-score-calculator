@@ -8,12 +8,12 @@ var result = separate(data);
 describe('seperateIntoTeams', function(){
   
   it('should be an object', function(){
-    assert.typeOf(result, 'array');
+    assert.typeOf(result, 'object');
   });
   
   it('should contain arrays', function(){
-    result.forEach(function (team) {
-      assert.typeOf(team, 'array');
+    Object.keys(result).forEach(function (team) {
+      assert.typeOf(result[team], 'array');
     })
   });
   
